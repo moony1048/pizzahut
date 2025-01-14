@@ -366,9 +366,8 @@
     font-weight: 500;
     font-size: 1.6rem;
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     text-align: center;
-    /* align-items: center; */
     gap: 37px;
     color: #bbbbbb;
 }
