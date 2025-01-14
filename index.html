@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>피자헛 리디자인</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- s: header -->
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="#"><img src="./images/head-logo.png" alt="피자헛 로고" /></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">메뉴</a>
+                        </li>
+                        <li>
+                            <a href="#">주문</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트&제휴</a>
+                        </li>
+                        <li>
+                            <a href="#">창업안내</a>
+                        </li>
+                        <li>
+                            <a href="#">피자헛 소식</a>
+                        </li>
+                    </ul>
+
+                    <div class="util-menu">
+                        <!-- .search-wrap>input+button:button.btn-search>img[src="./images/ic_search.png"][alt="검색"] -->
+                        <div class="search-wrap">
+                            <input type="text" placeholder="검색어를 입력어를 입력하세요" />
+                            <button type="button" class="btn-search">
+                                <img src="./images/ic_search.png" alt="검색" />
+                            </button>
+                        </div>
+                        <button type="button" class="btn-login">
+                            <img src="./images/ic_login.png" alt="로그인" />
+                        </button>
+                        <button type="button" class="btn-shop">
+                            <img src="./images/ic_shop.png" alt="장바구니" />
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <hr />
+        <!-- //e: header -->
+
+        <!-- s: main -->
+        <main id="main">
+            <!-- s: 메인 비주얼 -->
+            <section class="visual">
+                <div class="inner">
+                    <h2 class="hidden">메인비주얼</h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper visual-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./images/pc_promotion1.png" alt="promotion1" />
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./images/pc_promotion2.png" alt="promotion2" />
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./images/pc_promotion3.png" alt="promotion3" />
+                                </figure>
+                            </div>
+                        </div>
+
+                        <button class="btn-prev btn"><img src="./images/btn-prev.png" alt="이전" /></button>
+
+                        <button class="btn-next btn"><img src="./images/btn-next.png" alt="다음" /></button>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <!-- //e; 메인 비주얼 -->
+
+            <!-- s: icons 영역  -->
+            <ul class="icons-list">
+                <li>
+                    <a href="#">
+                        <p>배달주문</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <p>포장주문</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <p>마이오더</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- //e; icons 영역 -->
+
+            <!-- s: menu 영역  -->
+            <section class="menu">
+                <div class="inner">
+                    <h2 class="sec-title">메뉴</h2>
+
+                    <div class="tab">
+                        <div class="tab-menu">
+                            <a href="#" class="active">BEST</a>
+                            <a href="#">NEW</a>
+                        </div>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./images/best_menu_super.png" alt="수퍼슈프림" /></figure>
+                                    <p>수퍼슈프림</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./images/best_menu_seafood.png" alt="씨푸드킹" /></figure>
+                                    <p>씨푸드킹</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <figure><img src="./images/best_menu_pepperoni.png" alt="페퍼로니 러버" /></figure>
+                                    <p>페퍼로니 러버</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-more">메뉴 더보기</a>
+                    </div>
+                </div>
+            </section>
+            <!-- //e; menu 영역  -->
+
+            <!-- s: 브랜드 소개 영역  -->
+            <section class="brand">
+                <div class="inner">
+                    <h2 class="sec-title">Taste the difference</h2>
+                    <p>
+                        고객이 가장 좋아하는 장소이자, 음식을 즐기는 최고의 방법이 되기 위해 피자헛은 오늘도 노력합니다.
+                    </p>
+                    <div class="brand-list">
+                        <div class="brand-list-item">
+                            <h3><strong>도우</strong>의 작은차이</h3>
+                            <div>
+                                <p>최적의 숙성관리를 통해 더욱 쫄깃하고 담백해졌습니다.</p>
+                                <em>프리미엄 피자에 해당</em>
+                            </div>
+                            <figure><img src="./images/brand_dow.png" alt="도우의 작은차이" /></figure>
+                        </div>
+
+                        <div class="brand-list-item">
+                            <h3><strong>소스</strong>의 작은차이</h3>
+                            <div>
+                                <p>
+                                    피자 본연의 풍미를 더해주는 신선한 토마토 소스로 더 깊고 진한 피자의 맛을 느낄 수
+                                    있습니다.
+                                </p>
+                            </div>
+                            <figure><img src="./images/brand_tomato.png" alt="소스의 작은차이" /></figure>
+                        </div>
+
+                        <div class="brand-list-item">
+                            <h3><strong>피클</strong>의 작은차이</h3>
+                            <div>
+                                <p>국내산 생오이를 그대로 넣어 더욱 신선하고 아삭한 식감을 제공합니다.</p>
+                            </div>
+                            <figure><img src="./images/brand_pickle.png" alt="피클의 작은차이" /></figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e: 브랜드 소개 영역  -->
+
+            <!-- s: 피자헛 소식 영역 -->
+            <section class="notice">
+                <div class="inner">
+                    <h2 class="sec-title">피자헛 소식</h2>
+                    <!-- <p>전체</p>
+                    <p>공지사항</p>
+                    <p>보도자료</p> -->
+                    <div class="notice-list">
+                        <div class="notice-list-item">
+                            <a href="#">
+                                <figure>
+                                    <img
+                                        src="./images/notice_img2.png"
+                                        alt="피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고"
+                                    />
+                                </figure>
+                                <dl>
+                                    <dt>피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고</dt>
+                                    <dd>2022-02-17</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="notice-list-item">
+                            <a href="#">
+                                <figure><img src="./images/notice_img1.jpg" alt="피자헛 가격 조정 안내" /></figure>
+                                <dl>
+                                    <dt>피자헛 가격 조정 안내</dt>
+                                    <dd>2024-04-25</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="notice-list-item">
+                            <a href="#">
+                                <figure>
+                                    <img
+                                        src="./images/notice_img3.png"
+                                        alt="피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시"
+                                    />
+                                </figure>
+                                <dl>
+                                    <dt>피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시</dt>
+                                    <dd>2022-02-14</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-more">더보기</a>
+                </div>
+            </section>
+            <!-- //e: 피자헛 소식 영역 -->
+        </main>
+        <!-- //e: main -->
+
+        <!-- s: fooer -->
+        <footer id="footer">
+            <div class="inner">
+                <strong class="foot-logo"><img src="./images/foot-logo.png" alt="피자헛" /></strong>
+
+                <div class="foot-link">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">창업안내</a></li>
+                        <li><a href="#">대표번호 1588-5588(운영시간 10:30 ~ 22:00)</a></li>
+                    </ul>
+                    <div class="foot-con">
+                        <div>
+                            <p>서울시 영등포구 국회대로 74길 4, 9~11층</p>
+                            <p>사업자등록번호 120-81-63948</p>
+                            <p>한국피자헛유한회사 대표이사 : 조윤상</p>
+                            <p>개인정보 보호책임자 : 손정완</p>
+                        </div>
+                        <p class="copyright">Copyright © BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</p>
+                    </div>
+                </div>
+
+                <div class="foot-sns">
+                    <ul class="foot-sns-list">
+                        <li>
+                            <a href="#">
+                                <i class="ri-facebook-circle-fill"></i>
+                                <i class="hidden">facebook</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-youtube-fill"></i>
+                                <i class="hidden">youtube</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-instagram-line"></i>
+                                <i class="hidden">instagram</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //e: fooer -->
+
+        <!-- s: 사이드 바 -->
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </aside>
+        <!-- //e; 사이드 바 -->
+
+        <script>
+            const visualSlider = new Swiper(".visual-slider", {
+                loop: true,
+                // loop: 반복
+                autoplay: true,
+                // autoplay: true: 자동으로 돌아가는 거
+                speed: 1000,
+                // 1초
+                // 기본값은 300ms
+                // direction: "vertical",기본값은 horisontal
+                // effect: "coverflow", ->
+                // slide, fade, flip, cube, coverflow
+
+                // 캐러셀
+                // slidesPerView: 2, 한 번에 보여줄 슬라이드 갯수
+
+                // 첫 번째 슬라이드를 가운데로
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                    // type: "fraction" -> 숫자로 표시
+                    clickable: true,
+                    // clickable: 클릭 가능
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
+        </script>
+    </body>
+</html>
