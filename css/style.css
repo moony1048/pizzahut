@@ -36,7 +36,7 @@
     gap: 4.8rem;
 }
 
-search-wrap .input {
+.search-wrap .input {
     font-weight: 400;
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.5);
@@ -152,7 +152,8 @@ search-wrap .input {
 .menu .inner {
     width: 186.2rem;
     height: 100.2rem;
-    background: skyblue;
+    /* background: skyblue; */
+    margin: 0 auto;
     margin-top: 17.7rem;
     text-align: center;
 }
@@ -166,12 +167,27 @@ search-wrap .input {
 .tab-menu {
     font-size: 2rem;
     font-weight: 500;
-    display: inline-block;
+    display: flex;
+    gap: 2.1rem;
     justify-content: center;
     cursor: pointer;
     margin-top: 2.8rem;
-    gap: 2.1rem;
-    /* border: 1px solid #000; */
+}
+.tab-menu a {
+    border-radius: 5px;
+
+    background: #f5f5f5;
+    padding: 1rem 2rem;
+}
+
+.tab-menu .active {
+    width: 12rem;
+    height: 5rem;
+}
+
+.tab-menu a:hover {
+    background: #da1a32;
+    color: #fff;
 }
 
 .menu-list {
@@ -179,44 +195,71 @@ search-wrap .input {
     justify-content: center;
     align-items: center;
     margin-top: 5.7rem;
+    gap: 4.9rem;
 }
 
 .menu-list figure img {
-    width: 70rem;
-    height: 59rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.menu-list figure img:hover {
+    width: 55rem;
+    height: 55rem;
+    font-size: 4rem;
 }
 
 .menu-list li p {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 600;
+    margin-top: 4.4rem;
 }
 
 .btn-more {
     font-weight: 600;
     font-size: 2rem;
-    margin-top: 7.6rem;
-    background: url(../images/ico_more.svg) no-repeat 50%;
+    /* margin-top: 7.6rem;
+    width: 20.7rem;
+    height: 6rem; */
+    border-radius: 5px;
+    background: #da1a32 url(../images/ico_more.svg) no-repeat 50%;
 }
 
 .brand .inner {
     width: 185.3rem;
     height: 84.8rem;
-    background: green;
-    margin-top: 18.9rem;
+    margin: 0 auto;
+    /* background: green; */
+    margin-top: 2.9rem;
     text-align: center;
 }
 
+/* .brand .inner p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 0.6rem;
+} */
+
 .brand-list {
     display: flex;
-    margin-top: 13.2rem;
+    margin-top: 9.2rem;
     gap: 6.2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand-list-item {
-    width: 46rem;
-    height: 49.5rem;
     border: 1px solid #da1a32;
+
+    /* 이게 맞는지?   border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;*/
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+    width: 46rem;
+    height: 47.6rem;
 }
 
 .brand-list-item h3 strong {
@@ -224,25 +267,40 @@ search-wrap .input {
 }
 
 .brand-list-item h3 {
+    /* 이게 맞는지?   border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;*/
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 46rem;
+    height: 7.8rem;
+    padding: 2rem 2rem;
+
+    background: #da1a32;
     font-size: 2.8rem;
     color: #fff;
 }
 
 .brand-list-item p {
     font-weight: 500;
+    line-height: 1.4;
     font-size: 2.1rem;
     color: #666;
-    margin-top: 5.8rem;
+    margin-top: 4.8rem;
 }
-.brand-list-item p em {
+.brand-list-item p + em {
     font-weight: 500;
     font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.6);
-    margin-top: 0.5rem;
+    color: rgba(102, 102, 102, 0.8);
+    margin-top: 1.5rem;
+}
+
+.brand-list-item figure {
+    overflow: hidden;
+    margin-top: 3.2rem;
 }
 
 .brand-list-item figure img {
-    width: 47rem;
+    width: 46rem;
     height: 26rem;
     object-fit: cover;
 }
@@ -250,12 +308,46 @@ search-wrap .input {
 .notice .inner {
     width: 182.1rem;
     height: 104.2rem;
-    background: purple;
+    margin: 0 auto;
+    /* background: purple; */
     margin-top: 18.9rem;
+    text-align: center;
 }
 
 .notice-list {
     display: flex;
+    margin-top: 6.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.notice-list-item {
+    width: 54.4rem;
+    height: 56.6rem;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+.notice-list-item figure img {
+    width: 54.4rem;
+    height: 38.8rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.notice-list-item dl {
+    margin-top: 3.1rem;
+    padding: 2rem 1rem;
+}
+.notice-list-item dl dt {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.notice-list-item dl dd {
+    margin-top: 3rem;
+    text-align: right;
+    padding: 2rem 2rem;
 }
 
 #footer {
@@ -274,7 +366,9 @@ search-wrap .input {
     font-weight: 500;
     font-size: 1.6rem;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
     gap: 37px;
     color: #bbbbbb;
 }
