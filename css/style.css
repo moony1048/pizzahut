@@ -353,8 +353,18 @@
 #footer {
     display: flex;
     background: #363636;
+    width: 192rem;
+    height: 33.9rem;
     margin-top: 10.9rem;
     padding: 2.9rem 0;
+}
+
+#footer .inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.7rem;
 }
 
 .foot-logo {
@@ -362,23 +372,45 @@
     height: 3.2rem;
 }
 
-.foot-link ul {
+.foot-link-list {
+    display: flex;
     font-weight: 500;
     font-size: 1.6rem;
-    display: flex;
+    line-height: 1.4;
     justify-content: space-between;
-    text-align: center;
-    gap: 37px;
+    gap: 3.7rem;
     color: #bbbbbb;
 }
 
-.foot-con {
-    font-weight: 500;
-    font-size: 1.4rem;
+.foot-con-list {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.4;
+    margin-top: 2.9rem;
 }
 
-.foot-con div {
+.foot-con-list p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #bbbbbb;
+}
+
+.copyright {
+    margin-top: 2.9rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #bbbbbb;
+}
+
+.foot-link li a {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #bbbbbb;
+}
+
+.foot-sns-list {
     display: flex;
+    gap: 1.6rem;
 }
 
 .foot-sns-list {
@@ -401,3 +433,12 @@
 .foot-sns-list li a i {
     font-size: 5rem;
 }
+
+/* 해야할 거 */
+/* 메인비주얼 ... 이거 넣기 */
+/* gnb 호버했을 때 메뉴 나오는 거 */
+/* 메뉴, 브랜드 소개, 피자헛 소식 슬라이더 형식?으로 */
+/* 메뉴 더보기 */
+/* 브랜드 소개 부분 위만 호버했을 때 올라가도록? 아니면 그냥 호버헀을 때 커지도록 */
+/* 피자헛 소식도 호버했을 때 커지도록 */
+/* footer 상단 맞추는 법 */
