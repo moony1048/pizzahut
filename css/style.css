@@ -120,6 +120,7 @@
 .icons-list li {
     width: 47rem;
     height: 24rem;
+    height: 38rem;
     padding: 13rem 5.5rem;
 }
 
@@ -140,6 +141,23 @@
 }
 .icons-list li:nth-child(3)::before {
     background-image: url(../images/icons_order.png);
+}
+
+.icons-list li:hover {
+    background: var(--main-color);
+}
+
+.icons-list li:hover a {
+    color: #fff;
+}
+.icons-list li:hover:nth-child(1)::before {
+    background-image: url(../images/icons_delivery-white.png);
+}
+.icons-list li:hover:nth-child(2)::before {
+    background-image: url(../images/icons_present_white.png);
+}
+.icons-list li:hover:nth-child(3)::before {
+    background-image: url(../images/icons_order_white.png);
 }
 
 .icons-list li a p {
@@ -186,7 +204,7 @@
 }
 
 .tab-menu a:hover {
-    background: #da1a32;
+    background: var(--main-color);
     color: #fff;
 }
 
@@ -220,12 +238,26 @@
 .btn-more {
     font-weight: 600;
     font-size: 2rem;
-    /* margin-top: 7.6rem;
+    margin-top: 7.6rem;
     width: 20.7rem;
-    height: 6rem; */
+    height: 6rem;
+    display: inline-block;
+    padding: 1.6rem 3.3rem;
     border-radius: 5px;
-    background: #da1a32 url(../images/ico_more.svg) no-repeat 50%;
+    background: var(--main-color);
+    color: #fff;
+    /* position: relative; */
 }
+
+/* .btn-more::after {
+    content: "";
+    background: url(../images/ico_more.svg) no-repeat 0 0;
+    position: absolute;
+    bottom: 15px;
+    right: 24px;
+    width: 2.4rem;
+    height: 2.1rem;
+} */
 
 .brand .inner {
     width: 185.3rem;
@@ -251,7 +283,7 @@
 }
 
 .brand-list-item {
-    border: 1px solid #da1a32;
+    border: 1px solid var(--main-color);
 
     /* 이게 맞는지?   border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;*/
@@ -260,6 +292,8 @@
 
     width: 46rem;
     height: 47.6rem;
+
+    transition: 0.4s;
 }
 
 .brand-list-item h3 strong {
@@ -275,9 +309,12 @@
     height: 7.8rem;
     padding: 2rem 2rem;
 
-    background: #da1a32;
+    background: var(--main-color);
     font-size: 2.8rem;
     color: #fff;
+}
+.brand-list-item:hover {
+    transform: scale(1.2);
 }
 
 .brand-list-item p {
@@ -319,7 +356,7 @@
     margin-top: 6.2rem;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .notice-list-item {
@@ -327,6 +364,7 @@
     height: 56.6rem;
     background: #f5f5f5;
     border-radius: 5px;
+    transition: 0.4s;
 }
 .notice-list-item figure img {
     width: 54.4rem;
@@ -348,6 +386,10 @@
     margin-top: 3rem;
     text-align: right;
     padding: 2rem 2rem;
+}
+
+.notice-list-item:hover {
+    transform: scale(1.1);
 }
 
 #footer {
@@ -434,11 +476,22 @@
     font-size: 5rem;
 }
 
+.sidebar {
+    font-weight: 800;
+    font-size: 1.8rem;
+    display: inline-block;
+    background: var(--main-color);
+}
+
+.sidebar-list {
+    width: 13rem;
+    height: 13rem;
+    color: #fff;
+}
+
 /* 해야할 거 */
 /* 메인비주얼 ... 이거 넣기 */
 /* gnb 호버했을 때 메뉴 나오는 거 */
 /* 메뉴, 브랜드 소개, 피자헛 소식 슬라이더 형식?으로 */
-/* 메뉴 더보기 */
-/* 브랜드 소개 부분 위만 호버했을 때 올라가도록? 아니면 그냥 호버헀을 때 커지도록 */
-/* 피자헛 소식도 호버했을 때 커지도록 */
+/* 메뉴 더보기->호버하면 왜 글씨가 사라지는지? */
 /* footer 상단 맞추는 법 */
