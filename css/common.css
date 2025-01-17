@@ -40,3 +40,10 @@ a:hover {
 img {
     max-width: 100%;
 }
+
+.inner {
+    width: 149rem;
+    margin: 0 auto;
+    text-align: center;
+    background: yellow;
+}
