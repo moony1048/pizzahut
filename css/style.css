@@ -208,24 +208,71 @@
     color: #fff;
 }
 
+.menu-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-slider .swiper-slide figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* background: #000; */
+}
+
+.menu-slider .swiper-slide figure img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-slider .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* 배경 회색 -> 투명하게 */
+    width: 3rem;
+    height: 6rem;
+}
+
+.menu-slider .btn-prev {
+    left: 10px;
+}
+
+.menu-slider .btn-next {
+    right: 10px;
+}
+
 .menu-list {
+    margin-top: 5.7rem;
+}
+
+/* .menu-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5.7rem;
     gap: 4.9rem;
-}
+} */
 
 .menu-list figure img {
     width: 35rem;
     height: 35rem;
     border-radius: 0.5rem;
     transition: 0.4s;
+    transform: scale(0.9);
 }
 
+/* 활성화가 되는 것도 이미지가 커지고, 호버했을 때도 이미지가 커지게 할 때  */
+.menu-list .swiper-slide-active figure img,
 .menu-list figure img:hover {
-    width: 55rem;
-    height: 55rem;
+    transform: scale(1);
     font-size: 4rem;
 }
 
@@ -266,27 +313,66 @@
     /* background: green; */
     margin-top: 2.9rem;
     text-align: center;
+    /* position: relative; */
 }
 
 /* .brand .inner p {
     font-size: 2.5rem;
     font-weight: 500;
     margin-top: 0.6rem;
-} */
+    } */
+
+.brand-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.brand-slider .swiper-slide figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.brand-slider .swiper-slide figure img {
+    width: 46rem;
+    height: 47.6rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.brand-slider .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* 배경 회색 -> 투명하게 */
+    width: 3rem;
+    height: 6rem;
+}
+
+.brand-slider .btn-prev {
+    left: 10px;
+}
+
+.brand-slider .btn-next {
+    right: 10px;
+}
 
 .brand-list {
     display: flex;
     margin-top: 9.2rem;
     gap: 6.2rem;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .brand-list-item {
     border: 1px solid var(--main-color);
 
-    /* 이게 맞는지?   border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;*/
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 
@@ -301,8 +387,6 @@
 }
 
 .brand-list-item h3 {
-    /* 이게 맞는지?   border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;*/
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     width: 46rem;
@@ -313,6 +397,7 @@
     font-size: 2.8rem;
     color: #fff;
 }
+
 .brand-list-item:hover {
     transform: scale(1.2);
 }
@@ -324,6 +409,7 @@
     color: #666;
     margin-top: 4.8rem;
 }
+
 .brand-list-item p + em {
     font-weight: 500;
     font-size: 1.5rem;
@@ -340,6 +426,47 @@
     width: 46rem;
     height: 26rem;
     object-fit: cover;
+}
+
+.notice-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.notice-slider .swiper-slide figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* background: #000; */
+}
+
+.notice-slider .swiper-slide figure img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.notice-slider .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* 배경 회색 -> 투명하게 */
+    width: 3rem;
+    height: 6rem;
+}
+
+.notice-slider .btn-prev {
+    left: 10px;
+}
+
+.notice-slider .btn-next {
+    right: 10px;
 }
 
 .notice .inner {
@@ -366,6 +493,7 @@
     border-radius: 5px;
     transition: 0.4s;
 }
+
 .notice-list-item figure img {
     width: 54.4rem;
     height: 38.8rem;
@@ -404,9 +532,9 @@
 #footer .inner {
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
     gap: 12.7rem;
+    padding: 6.7rem 0;
 }
 
 .foot-logo {
@@ -429,12 +557,20 @@
     flex-wrap: wrap;
     line-height: 1.4;
     margin-top: 2.9rem;
+    /* gap: 10.2rem; */
 }
 
 .foot-con-list p {
+    display: flex;
+    gap: 10.2rem;
     font-weight: 500;
     font-size: 1.6rem;
     color: #bbbbbb;
+
+    /* flex-wrap: wrap; */
+}
+
+.foot-con-list p + p + p {
 }
 
 .copyright {
@@ -480,18 +616,51 @@
     font-weight: 800;
     font-size: 1.8rem;
     display: inline-block;
-    background: var(--main-color);
+    width: 13rem;
+    height: 28rem;
+    /* border: 4px solid orange; */
+    border-radius: 77.5rem;
 }
 
-.sidebar-list {
+.sidebar-list li {
+    color: #fff;
+    /* border: 10px solid green; */
+    background: var(--main-color);
     width: 13rem;
     height: 13rem;
-    color: #fff;
+    border-radius: 77.5rem;
+    padding: 2.6rem 3.3rem;
+    /* gap: 2rem; */
+    margin-top: 2rem;
+
+    /* position: absolute;
+    top: 3500px;
+    right: 60px; */
+}
+
+.sidebar-list li::before {
+    content: "";
+    display: block;
+    /* width: 8rem; */
+    height: 5rem;
+    background: no-repeat 50%;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+}
+
+.sidebar-list li:nth-child(1)::before {
+    background-image: url(../images/sidebar_shop.png);
+}
+
+.sidebar-list li:nth-child(2)::before {
+    background-image: url(../images/sidebar_customer.png);
 }
 
 /* 해야할 거 */
 /* 메인비주얼 ... 이거 넣기 */
 /* gnb 호버했을 때 메뉴 나오는 거 */
 /* 메뉴, 브랜드 소개, 피자헛 소식 슬라이더 형식?으로 */
+/* 메뉴 슬라이더 갭 줄이기 */
 /* 메뉴 더보기->호버하면 왜 글씨가 사라지는지? */
-/* footer 상단 맞추는 법 */
+/* 사이드바 gap이 어디로? , 사이드바 옆으로 가는 법? */
+/* footer 글 밑으로 내려가게 */

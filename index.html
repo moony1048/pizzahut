@@ -91,6 +91,9 @@
                                     <img src="./images/pc_promotion3.png" alt="promotion3" />
                                 </figure>
                             </div>
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
                         </div>
 
                         <button class="btn-prev btn"><img src="./images/btn-prev.png" alt="이전" /></button>
@@ -134,29 +137,78 @@
                             <a href="#" class="active">BEST</a>
                             <a href="#" class="active">NEW</a>
                         </div>
-                        <div class="swiper">
-                            <ul class="menu-list">
-                                <li class="slide">
-                                    <a href="#">
-                                        <figure><img src="./images/best_menu_super.png" alt="수퍼슈프림" /></figure>
-                                        <p>수퍼슈프림</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <figure><img src="./images/best_menu_seafood.png" alt="씨푸드킹" /></figure>
-                                        <p>씨푸드킹</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <figure>
-                                            <img src="./images/best_menu_pepperoni.png" alt="페퍼로니 러버" />
-                                        </figure>
-                                        <p>페퍼로니 러버</p>
-                                    </a>
-                                </li>
+
+                        <div class="swiper menu-slider">
+                            <ul class="swiper-wrapper menu-list">
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_super.png" alt="수퍼슈프림" />
+                                            </figure>
+                                            <p>수퍼슈프림</p>
+                                        </a>
+                                    </li>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_seafood.png" alt="씨푸드킹" />
+                                            </figure>
+                                            <p>씨푸드킹</p>
+                                        </a>
+                                    </li>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_che_pepperoni.png" alt="페퍼로니 치즈딥" />
+                                            </figure>
+                                            <p>페퍼로니 치즈딥</p>
+                                        </a>
+                                    </li>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_taco.png" alt="올라! 타코" />
+                                            </figure>
+                                            <p>올라! 타코</p>
+                                        </a>
+                                    </li>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_labbq.png" alt="LA BBQ 불고기 치즈딥" />
+                                            </figure>
+                                            <p>LA BBQ 불고기 치즈딥</p>
+                                        </a>
+                                    </li>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./images/best_menu_che_com.png" alt="콤비네이션 치즈딥" />
+                                            </figure>
+                                            <p>콤비네이션 치즈딥</p>
+                                        </a>
+                                    </li>
+                                </div>
                             </ul>
+                            <button class="btn-prev btn"><img src="./images/btn-prev-color.png" alt="이전" /></button>
+
+                            <button class="btn-next btn"><img src="./images/btn-next-color.png" alt="다음" /></button>
                         </div>
                         <a href="#" class="btn-more">메뉴 더보기</a>
                     </div>
@@ -171,34 +223,76 @@
                     <p>
                         고객이 가장 좋아하는 장소이자, 음식을 즐기는 최고의 방법이 되기 위해 피자헛은 오늘도 노력합니다.
                     </p>
-                    <div class="brand-list">
-                        <div class="brand-list-item">
-                            <h3><strong>도우</strong>의 작은차이</h3>
-                            <div>
-                                <p>최적의 숙성관리를 통해 더욱 쫄깃하고 담백해졌습니다.</p>
-                                <em>프리미엄 피자에 해당</em>
-                            </div>
-                            <figure><img src="./images/brand_dow.png" alt="도우의 작은차이" /></figure>
-                        </div>
 
-                        <div class="brand-list-item">
-                            <h3><strong>소스</strong>의 작은차이</h3>
-                            <div>
-                                <p>
-                                    피자 본연의 풍미를 더해주는 신선한 토마토 소스로 더 깊고 진한 피자의 맛을 느낄 수
-                                    있습니다.
-                                </p>
-                            </div>
-                            <figure><img src="./images/brand_tomato.png" alt="소스의 작은차이" /></figure>
-                        </div>
+                    <div class="swiper brand-slider">
+                        <!-- <div class="brand-list"> -->
+                        <div class="brand-list">
+                            <div class="swiper-wrapper brand-list-item">
+                                <div class="swiper-slide">
+                                    <h3><strong>도우</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>최적의 숙성관리를 통해 더욱 쫄깃하고 담백해졌습니다.</p>
+                                        <em>프리미엄 피자에 해당</em>
+                                    </div>
+                                    <figure><img src="./images/brand_dow.png" alt="도우의 작은차이" /></figure>
+                                </div>
 
-                        <div class="brand-list-item">
-                            <h3><strong>피클</strong>의 작은차이</h3>
-                            <div>
-                                <p>국내산 생오이를 그대로 넣어 더욱 신선하고 아삭한 식감을 제공합니다.</p>
+                                <div class="swiper-slide">
+                                    <h3><strong>소스</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>
+                                            피자 본연의 풍미를 더해주는 신선한 토마토 소스로 더 깊고 진한 피자의 맛을
+                                            느낄 수 있습니다.
+                                        </p>
+                                    </div>
+                                    <figure><img src="./images/brand_tomato.png" alt="소스의 작은차이" /></figure>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3><strong>피클</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>국내산 생오이를 그대로 넣어 더욱 신선하고 아삭한 식감을 제공합니다.</p>
+                                    </div>
+                                    <figure><img src="./images/brand_pickle.png" alt="피클의 작은차이" /></figure>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3><strong>치즈</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>
+                                            3가지 프리미엄 치즈를 블렌딩하여 고소함과 풍미를 끌어올린 피자헛만의 고품질
+                                            치즈를 사용합니다.
+                                        </p>
+                                    </div>
+                                    <figure><img src="./images/brand_cheeze.png" alt="치즈의 작은차이" /></figure>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3><strong>토핑</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>
+                                            엄격한 품질관리 시스템을 통과한 신선하고 품질 좋은 재료만을 사용해 토핑
+                                            본연의 맛을 살렸습니다.
+                                        </p>
+                                    </div>
+                                    <figure><img src="./images/brand_toping.png" alt="토핑의 작은차이" /></figure>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3><strong>딜리버리</strong>의 작은차이</h3>
+                                    <div>
+                                        <p>
+                                            피자가 가장 맛있는 온도를 유지할 수 있는 핫 파우치로 먹는 순간까지 갓 구운
+                                            피자 맛을 지킵니다.
+                                        </p>
+                                    </div>
+                                    <figure><img src="./images/brand_delivery.png" alt="딜리버리의 작은차이" /></figure>
+                                </div>
                             </div>
-                            <figure><img src="./images/brand_pickle.png" alt="피클의 작은차이" /></figure>
                         </div>
+                        <button class="btn-prev btn"><img src="./images/btn-prev-color.png" alt="이전" /></button>
+
+                        <button class="btn-next btn"><img src="./images/btn-next-color.png" alt="다음" /></button>
                     </div>
                 </div>
             </section>
@@ -213,45 +307,54 @@
                         <a href="#" class="active">공지사항</a>
                         <a href="#" class="active">보도자료</a>
                     </div>
-                    <div class="notice-list">
-                        <div class="notice-list-item">
-                            <a href="#">
-                                <figure>
-                                    <img
-                                        src="./images/notice_img2.png"
-                                        alt="피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고</dt>
-                                    <dd>2022-02-17</dd>
-                                </dl>
-                            </a>
-                        </div>
-                        <div class="notice-list-item">
-                            <a href="#">
-                                <figure><img src="./images/notice_img1.jpg" alt="피자헛 가격 조정 안내" /></figure>
-                                <dl>
-                                    <dt>피자헛 가격 조정 안내</dt>
-                                    <dd>2024-04-25</dd>
-                                </dl>
-                            </a>
-                        </div>
-                        <div class="notice-list-item">
-                            <a href="#">
-                                <figure>
-                                    <img
-                                        src="./images/notice_img3.png"
-                                        alt="피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시</dt>
-                                    <dd>2022-02-14</dd>
-                                </dl>
-                            </a>
+
+                    <div class="swiper notice-slider">
+                        <div class="notice-list">
+                            <div class="swiper-wrapper notice-list-item">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./images/notice_img2.png"
+                                                alt="피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고"
+                                            />
+                                        </figure>
+                                        <dl>
+                                            <dt>피자헛, 프리미엄 피자 찾아 우주로...SF 영화 같은 광고</dt>
+                                            <dd>2022-02-17</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="notice-list-item">
+                                <a href="#">
+                                    <figure><img src="./images/notice_img1.jpg" alt="피자헛 가격 조정 안내" /></figure>
+                                    <dl>
+                                        <dt>피자헛 가격 조정 안내</dt>
+                                        <dd>2024-04-25</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <figure>
+                                        <img
+                                            src="./images/notice_img3.png"
+                                            alt="피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시"
+                                        />
+                                    </figure>
+                                    <dl>
+                                        <dt>피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시</dt>
+                                        <dd>2022-02-14</dd>
+                                    </dl>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <button class="btn-prev btn"><img src="./images/btn-prev-color.png" alt="이전" /></button>
+
+                    <button class="btn-next btn"><img src="./images/btn-next-color.png" alt="다음" /></button>
+
                     <a href="#" class="btn-more">더보기</a>
                 </div>
             </section>
@@ -339,7 +442,111 @@
                 // If we need pagination
                 pagination: {
                     el: ".swiper-pagination",
-                    type: "fraction",
+                    type: "bullets",
+                    // type: "fraction" -> 숫자로 표시
+                    clickable: true,
+                    // clickable: 클릭 가능
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
+
+            const menuSlider = new Swiper(".menu-slider", {
+                loop: true,
+                // loop: 반복
+                autoplay: true,
+                // autoplay: true: 자동으로 돌아가는 거
+                speed: 1000,
+                slidesPerView: 3,
+                centeredSlides: true,
+
+                // 1초
+                // 기본값은 300ms
+                // direction: "vertical",기본값은 horisontal
+                // effect: "coverflow", ->
+                // slide, fade, flip, cube, coverflow
+
+                // 캐러셀
+                // slidesPerView: 2, 한 번에 보여줄 슬라이드 갯수
+
+                // 첫 번째 슬라이드를 가운데로
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                    // type: "fraction" -> 숫자로 표시
+                    clickable: true,
+                    // clickable: 클릭 가능
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
+
+            const brandSlider = new Swiper(".brand-slider", {
+                loop: true,
+                // loop: 반복
+                autoplay: true,
+                // autoplay: true: 자동으로 돌아가는 거
+                speed: 1000,
+                slidesPerView: 3,
+                // 1초
+                // 기본값은 300ms
+                // direction: "vertical",기본값은 horisontal
+                // effect: "coverflow", ->
+                // slide, fade, flip, cube, coverflow
+
+                // 캐러셀
+                // slidesPerView: 2, 한 번에 보여줄 슬라이드 갯수
+
+                // 첫 번째 슬라이드를 가운데로
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                    // type: "fraction" -> 숫자로 표시
+                    clickable: true,
+                    // clickable: 클릭 가능
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
+
+            const noticeSlider = new Swiper(".notice-slider", {
+                loop: true,
+                // loop: 반복
+                autoplay: true,
+                // autoplay: true: 자동으로 돌아가는 거
+                speed: 1000,
+                slidesPerView: 3,
+                // 1초
+                // 기본값은 300ms
+                // direction: "vertical",기본값은 horisontal
+                // effect: "coverflow", ->
+                // slide, fade, flip, cube, coverflow
+
+                // 캐러셀
+                // slidesPerView: 2, 한 번에 보여줄 슬라이드 갯수
+
+                // 첫 번째 슬라이드를 가운데로
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
                     // type: "fraction" -> 숫자로 표시
                     clickable: true,
                     // clickable: 클릭 가능
