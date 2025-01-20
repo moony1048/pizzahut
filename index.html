@@ -191,9 +191,9 @@
                                 </a>
                             </li>
                         </ul>
-                        <button class="btn-prev btn"><img src="./images/btn-prev-color.png" alt="이전" /></button>
-                        <button class="btn-next btn"><img src="./images/btn-next-color.png" alt="다음" /></button>
                     </div>
+                    <button class="btn-prev btn"><img src="./images/btn-prev-color.png" alt="이전" /></button>
+                    <button class="btn-next btn"><img src="./images/btn-next-color.png" alt="다음" /></button>
                     <a href="#" class="btn-more">메뉴 더보기</a>
                 </div>
             </section>
@@ -307,31 +307,74 @@
                                         </dl>
                                     </a>
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <figure><img src="./images/notice_img1.jpg" alt="피자헛 가격 조정 안내" /></figure>
-                                    <dl>
-                                        <dt>피자헛 가격 조정 안내</dt>
-                                        <dd>2024-04-25</dd>
-                                    </dl>
-                                </a>
-                            </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./images/notice_img1.jpg" alt="피자헛 가격 조정 안내" />
+                                        </figure>
+                                        <dl>
+                                            <dt>피자헛 가격 조정 안내</dt>
+                                            <dd>2024-04-25</dd>
+                                        </dl>
+                                    </a>
+                                </div>
 
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img
-                                            src="./images/notice_img3.png"
-                                            alt="피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시"
-                                        />
-                                    </figure>
-                                    <dl>
-                                        <dt>피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시</dt>
-                                        <dd>2022-02-14</dd>
-                                    </dl>
-                                </a>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./images/notice_img3.png"
+                                                alt="피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시"
+                                            />
+                                        </figure>
+                                        <dl>
+                                            <dt>피자헛, 태국 대표 요리를 그대로...‘푸팟퐁커리 피자’ 출시</dt>
+                                            <dd>2022-02-14</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./images/notice_img1.jpg"
+                                                alt="K-WAVE 최애콤보 이벤트 당첨자 발표"
+                                            />
+                                        </figure>
+                                        <dl>
+                                            <dt>K-WAVE 최애콤보 이벤트 당첨자 발표</dt>
+                                            <dd>2024-05-03</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img
+                                                src="./images/notice_img4.png"
+                                                alt="피자헛, 국내 최초 프리미엄 발열 패키지 ‘헛팩’ 출시"
+                                            />
+                                        </figure>
+                                        <dl>
+                                            <dt>피자헛, 국내 최초 프리미엄 발열 패키지 ‘헛팩’ 출시</dt>
+                                            <dd>2022-01-28</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./images/notice_img1.jpg" alt="일부 매장 피클 임시변경 안내" />
+                                        </figure>
+                                        <dl>
+                                            <dt>일부 매장 피클 임시변경 안내</dt>
+                                            <dd>2024-03-04</dd>
+                                        </dl>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -362,8 +405,10 @@
                         <div class="foot-con-list">
                             <p>서울시 영등포구 국회대로 74길 4, 9~11층</p>
                             <p>사업자등록번호 120-81-63948</p>
-                            <p>한국피자헛유한회사 대표이사 : 조윤상</p>
-                            <p>개인정보 보호책임자 : 손정완</p>
+                            <div class="foot-con-text">
+                                <p>한국피자헛유한회사 대표이사 : 조윤상</p>
+                                <p>개인정보 보호책임자 : 손정완</p>
+                            </div>
                         </div>
                         <p class="copyright">Copyright © BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</p>
                     </div>
@@ -469,8 +514,8 @@
 
                 // Navigation arrows
                 navigation: {
-                    nextEl: ".btn-next",
-                    prevEl: ".btn-prev",
+                    nextEl: ".tab .btn-next",
+                    prevEl: ".tab .btn-prev",
                 },
             });
 

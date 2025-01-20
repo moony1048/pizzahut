@@ -121,6 +121,7 @@
     width: 47rem;
     height: 24rem;
     height: 38rem;
+    /* height: 24rem; */
     padding: 13rem 5.5rem;
 }
 
@@ -167,10 +168,8 @@
     text-align: center;
 }
 
-.menu .inner {
-    width: 186.2rem;
-    height: 100.2rem;
-    /* background: skyblue; */
+.menu {
+    width: 149rem;
     margin: 0 auto;
     margin-top: 17.7rem;
     text-align: center;
@@ -181,7 +180,9 @@
     font-size: 4.5rem;
     color: #000;
 }
-
+.tab {
+    position: relative;
+}
 .tab-menu {
     font-size: 2rem;
     font-weight: 500;
@@ -191,6 +192,7 @@
     cursor: pointer;
     margin-top: 2.8rem;
 }
+
 .tab-menu a {
     border-radius: 5px;
 
@@ -227,7 +229,7 @@
     /* object-position: center; */
 }
 
-.menu-slider .btn {
+.tab .btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -237,16 +239,16 @@
     justify-content: center;
     align-items: center;
     background: transparent; /* 배경 회색 -> 투명하게 */
-    width: 3rem;
+    width: 6rem;
     height: 6rem;
 }
 
-.menu-slider .btn-prev {
-    left: 10px;
+.tab .btn-prev {
+    left: -20px;
 }
 
-.menu-slider .btn-next {
-    right: 10px;
+.tab .btn-next {
+    right: -20px;
 }
 
 .menu-list {
@@ -282,6 +284,7 @@
     margin-top: 4.4rem;
 }
 
+/* 메뉴 더보기 버튼 */
 .btn-more {
     font-weight: 600;
     font-size: 2rem;
@@ -296,19 +299,26 @@
     /* position: relative; */
 }
 
+.brand {
+    margin-top: 18.9rem;
+    /* 사이드바 부분 position? */
+    position: relative;
+}
+
 .brand-list {
     margin-top: 9.2rem;
     position: relative;
     /* border: 10px solid #000; */
 }
 
+/* 슬라이드 넘어가는 버튼 */
 .brand-list .btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
     cursor: pointer;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     background: transparent; /* 배경 회색 -> 투명하게 */
@@ -372,20 +382,48 @@
 
 .notice {
     margin-top: 18.9rem;
+    position: relative;
 }
 
 .notice-list {
     margin-top: 6.2rem;
 }
 
+/* 슬라이드 넘어가는 버튼 */
+.notice .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    z-index: 10;
+    cursor: pointer;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* 배경 회색 -> 투명하게 */
+    width: 3rem;
+    height: 6rem;
+}
+
+.notice .btn-prev {
+    left: 100px;
+}
+
+.notice .btn-next {
+    right: 100px;
+}
+
 .notice-slider .swiper-slide {
-    border: 1px solid #000;
+    width: 47.1rem;
+    height: 56.6rem;
+    /* border: 1px solid #000; */
     overflow: hidden;
+    background: #f5f5f5;
+    box-shadow: 0 0 4 rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
 }
 
 .notice-slider .swiper-slide figure {
     overflow: hidden;
-    margin-top: 3.2rem;
     width: 100%;
     height: 38.8rem;
 }
@@ -396,27 +434,24 @@
     object-fit: cover;
 }
 
-/* .notice-list {
-    margin-top: 6.2rem;
-    border: 10px solid #000;
-}
-
-.notice-slider .swiper-slide {
-    border: 1px solid #000;
-} */
-
 .notice-slider .swiper-slide dl {
-    padding: 0 3rem;
+    margin-top: 3.1rem;
 }
 
 .notice-slider .swiper-slide dl dt {
     font-weight: 500;
     font-size: 2.3rem;
+    padding: 0 3rem;
+    line-height: 1.4;
 }
 
-.notice-slider .swiper-slide dl dt dd {
+.notice-slider .swiper-slide dl dd {
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.8rem;
+    margin-top: 4.5rem;
+    text-align: right;
+    padding: 0 3rem;
+    line-height: 2.1;
 }
 
 #footer {
@@ -454,19 +489,26 @@
 .foot-con-list {
     display: flex;
     flex-wrap: wrap;
-    line-height: 1.4;
     margin-top: 2.9rem;
     /* gap: 10.2rem; */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    line-height: 1.4;
+    margin-top: 2.9rem;
+    gap: 10.2rem; */
 }
 
 .foot-con-list p {
-    display: flex;
-    gap: 10.2rem;
     font-weight: 500;
     font-size: 1.6rem;
     color: #bbbbbb;
+    border: 1px solid #f00;
+}
 
-    /* flex-wrap: wrap; */
+.foot-con-text {
+    display: flex;
+    gap: 12.8rem;
 }
 
 .copyright {
@@ -474,6 +516,7 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: #bbbbbb;
+    text-align: left;
 }
 
 .foot-link li a {
@@ -513,9 +556,13 @@
     font-size: 1.8rem;
     display: inline-block;
     width: 13rem;
-    height: 28rem;
+    height: 32rem;
     /* border: 4px solid orange; */
     border-radius: 77.5rem;
+
+    position: absolute;
+    top: 600px;
+    right: 20px;
 }
 
 .sidebar-list li {
@@ -528,10 +575,6 @@
     padding: 2.6rem 3.3rem;
     /* gap: 2rem; */
     margin-top: 2rem;
-
-    /* position: absolute;
-    top: 3500px;
-    right: 60px; */
 }
 
 .sidebar-list li::before {
@@ -555,8 +598,7 @@
 /* 해야할 거 */
 /* 메인비주얼 ... 이거 넣기 */
 /* gnb 호버했을 때 메뉴 나오는 거 */
-/* 메뉴, 브랜드 소개, 피자헛 소식 슬라이더 형식?으로 */
 /* 메뉴 슬라이더 갭 줄이기 */
 /* 메뉴 더보기->호버하면 왜 글씨가 사라지는지? */
-/* 사이드바 gap이 어디로? , 사이드바 옆으로 가는 법? */
+/* 공지사항 부분 글씨 간격 통일이 왜? */
 /* footer 글 밑으로 내려가게 */
