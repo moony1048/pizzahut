@@ -389,6 +389,13 @@
     margin-top: 6.2rem;
 }
 
+.notice-list .swiper-slide-active figure img,
+.notice-list figure img:hover {
+    transform: scale(1.2);
+    font-size: 4rem;
+    transition: 0.4s;
+}
+
 /* 슬라이드 넘어가는 버튼 */
 .notice .btn {
     position: absolute;
@@ -595,10 +602,6 @@
     background-image: url(../images/sidebar_customer.png);
 }
 
-/* 해야할 거 */
-/* 메인비주얼 ... 이거 넣기 */
-/* gnb 호버했을 때 메뉴 나오는 거 */
-/* 메뉴 슬라이더 갭 줄이기 */
-/* 메뉴 더보기->호버하면 왜 글씨가 사라지는지? */
-/* 공지사항 부분 글씨 간격 통일이 왜? */
-/* footer 글 밑으로 내려가게 */
+/* 브랜드 부분 호버 */
+/* 메뉴 더보기 호버하면 글씨가 사라짐 */
+/* footer 부분 글씨 */
